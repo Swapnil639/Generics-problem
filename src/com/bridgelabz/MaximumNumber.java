@@ -1,20 +1,26 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class MaximumNumber {
-    public void floatMax(float x, float y, float z) {
-        if (x > y && x > z) {
-                System.out.println("Maximum Float is = " + x);
+    public void StringMax(String x, String y, String z) {
+        if (x.length()>y.length() && x.length()>z.length()) {
+                System.out.println("Maximum String is = " + x);
             }
-        if (y > x && y > z) {
-                System.out.println("Maximum Float is = " + y);
+        if (y.length() > x.length() && y.length() > z.length()) {
+                System.out.println("Maximum String is = " + y);
             }
-        if (z > x && z > y) {
-                System.out.println("Maximum Float is = " + z);
+        if (z.length() > x.length() && z.length() > y.length()) {
+                System.out.println("Maximum String is = " + z);
             }
     }
     public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
         MaximumNumber obj=new MaximumNumber();
-        obj.floatMax(10.4f,20.6f,30.9f);
+        String x=scanner.next();
+        String y=scanner.next();
+        String z=scanner.next();
+        obj.StringMax(x,y,z);
     }
 
 }
