@@ -19,6 +19,7 @@ class Generic<T extends Comparable> {
         if (c.compareTo(max) > 0) {
             max = c;
         }
+        
         return max;
 
     }
@@ -31,6 +32,7 @@ public class MaximumNumber {
         System.out.println("Maximum among three integer values is :" + generic1.testCase());
         System.out.println("Maximum among three float values is :" + generic2.testCase());
         System.out.println("Maximum among three string values is :" + generic3.testCase());
+
 
     }
 }
