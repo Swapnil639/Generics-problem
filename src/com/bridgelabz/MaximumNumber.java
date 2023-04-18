@@ -1,26 +1,22 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
-
 public class MaximumNumber {
-    public void StringMax(String x, String y, String z) {
-        if (x.length()>y.length() && x.length()>z.length()) {
-                System.out.println("Maximum String is = " + x);
-            }
-        if (y.length() > x.length() && y.length() > z.length()) {
-                System.out.println("Maximum String is = " + y);
-            }
-        if (z.length() > x.length() && z.length() > y.length()) {
-                System.out.println("Maximum String is = " + z);
-            }
+    public static <T extends Comparable> T testCase(T a, T b, T c) {
+        T max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
+        }
+        if (c.compareTo(max) > 0) {
+            max = c;
+        }
+        return max;
     }
+
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        MaximumNumber obj=new MaximumNumber();
-        String x=scanner.next();
-        String y=scanner.next();
-        String z=scanner.next();
-        obj.StringMax(x,y,z);
+        System.out.println("Welcome to maximum number program !");
+        System.out.println("Maximum among three integer values is :" + testCase(900, 5000, 10));
+        System.out.println("Maximum among three float values is :" + testCase(9.8f, 5.7f, 101.7f));
+        System.out.println("Maximum among three string values is :" + testCase("Swapnil", "Shubham", "Kunal"));
     }
 
 }
