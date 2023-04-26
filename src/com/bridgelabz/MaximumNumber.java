@@ -2,8 +2,8 @@ package com.bridgelabz;
 
 
 public class MaximumNumber {
-    public static void floatMax(float x, float y, float z) {
-        Float max=x;
+    public static void stringMax(String x,String y,String z){
+        String max=x;
         if (y.compareTo(max)>0){
                 max=y;
         }
@@ -14,10 +14,7 @@ public class MaximumNumber {
     }
 
     public static void main(String[] args) {
-        floatMax(10.4f,20.6f,30.9f);
+        stringMax("Swapnil","Shubham","Kunal");
     }
       
-
-
-    }
 }
