@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+
 public class MaximumNumber {
     public static void floatMax(float x, float y, float z) {
         Float max=x;
@@ -11,8 +12,12 @@ public class MaximumNumber {
         }
         System.out.println(max+" is maximum");
     }
+
     public static void main(String[] args) {
         floatMax(10.4f,20.6f,30.9f);
     }
+      
 
+
+    }
 }
