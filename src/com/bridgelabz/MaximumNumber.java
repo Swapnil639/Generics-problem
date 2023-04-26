@@ -1,6 +1,5 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
 
 public class MaximumNumber {
     public static void stringMax(String x,String y,String z){
@@ -17,5 +16,5 @@ public class MaximumNumber {
     public static void main(String[] args) {
         stringMax("Swapnil","Shubham","Kunal");
     }
-
+      
 }
