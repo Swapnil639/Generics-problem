@@ -1,20 +1,20 @@
 package com.bridgelabz;
 
 public class MaximumNumber {
-    public void integerMax(int x, int y, int z) {
-        if (x > y && x > z) {
-                System.out.println("Maximum Integers is = " + x);
-            }
-        if (y > x && y > z) {
-                System.out.println("Maximum Integers is = " + y);
-            }
-        if (z > x && z > y) {
-                System.out.println("Maximum Integers is = " + z);
-            }
+    public static void testMaxNum(Integer x,Integer y,Integer z){
+        Integer max=x;
+        if (y.compareTo(max)>0){
+                max=y;
+        }
+        if (z.compareTo(max)>0){
+               max=z;
+        }
+        System.out.println(max+" is maximum");
     }
+
     public static void main(String[] args) {
-        MaximumNumber obj=new MaximumNumber();
-        obj.integerMax(10,20,30);
+        testMaxNum(1,20,3);
+       
     }
 
 }
